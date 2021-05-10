@@ -1,0 +1,45 @@
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         Apr-30-21 Friday EDT 10:48:13      
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         Apr-30-21 Friday EDT 10:56:30      
+[INFO]    - {org.menu.Main}    Would you like to Login to the Bank App (Yes/No/Create)         Apr-30-21 Friday EDT 10:56:30      
+[INFO]    - {org.menu.Main}    Login screen         Apr-30-21 Friday EDT 10:56:35      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         Apr-30-21 Friday EDT 10:56:35      
+[INFO]    - {org.menu.Main}    Please enter Password (case sensitive)         Apr-30-21 Friday EDT 10:56:38      
+[WARN]    - {org.menu.Main}    org.menu.exception.BankException: No User found with this username and password         Apr-30-21 Friday EDT 10:56:40      
+[INFO]    - {org.menu.Main}    Login screen         Apr-30-21 Friday EDT 10:56:40      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         Apr-30-21 Friday EDT 10:56:40      
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         Apr-30-21 Friday EDT 11:10:48      
+[INFO]    - {org.menu.Main}    Would you like to Login to the Bank App (Yes/No/Create)         Apr-30-21 Friday EDT 11:10:48      
+[INFO]    - {org.menu.Main}    Login screen         Apr-30-21 Friday EDT 11:10:53      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         Apr-30-21 Friday EDT 11:10:53      
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         Apr-30-21 Friday EDT 11:13:18      
+[INFO]    - {org.menu.Main}    Would you like to Login to the Bank App (Yes/No/Create)         Apr-30-21 Friday EDT 11:13:18      
+[INFO]    - {org.menu.Main}    Login screen         Apr-30-21 Friday EDT 11:13:24      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         Apr-30-21 Friday EDT 11:13:24      
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         Apr-30-21 Friday EDT 11:14:36      
+[INFO]    - {org.menu.Main}    Would you like to Login to the Bank App (Yes/No/Create)         Apr-30-21 Friday EDT 11:14:36      
+[INFO]    - {org.menu.Main}    Login screen         Apr-30-21 Friday EDT 11:14:41      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         Apr-30-21 Friday EDT 11:14:41      
+[INFO]    - {org.menu.Main}    Welcome to Bank App V1.0         May-03-21 Monday EDT 16:43:23      
+[INFO]    - {org.menu.Main}    Would you like to Login to the Bank App (Yes/No/Create)         May-03-21 Monday EDT 16:43:23      
+[INFO]    - {org.menu.Main}    Login screen         May-03-21 Monday EDT 16:43:28      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-03-21 Monday EDT 16:43:28      
+[INFO]    - {org.menu.Main}    Please enter Password (case sensitive)         May-03-21 Monday EDT 16:43:45      
+[WARN]    - {org.menu.Main}    Incorrect username or password         May-03-21 Monday EDT 16:43:53      
+[INFO]    - {org.menu.Main}    Login screen         May-03-21 Monday EDT 16:43:53      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-03-21 Monday EDT 16:43:53      
+[INFO]    - {org.menu.Main}    Please enter Password (case sensitive)         May-03-21 Monday EDT 16:44:01      
+[INFO]    - {org.menu.Main}    User has logged in         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    User{username='jenp', id=6}         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    Welcome Customer:         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    1) Apply for a new bank account         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    2) View balance of one account         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    3) Withdrawal or deposit in an account         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    4) Post money transfer to an other account         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    5) Accept money transfer from an other account         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    6) Exit         May-03-21 Monday EDT 16:45:02      
+[INFO]    - {org.menu.Main}    Your accounts:         May-03-21 Monday EDT 16:45:08      
+[INFO]    - {org.menu.Main}    #1234         May-03-21 Monday EDT 16:45:08      
+[INFO]    - {org.menu.Main}    #1254         May-03-21 Monday EDT 16:45:08      
+[INFO]    - {org.menu.Main}    #1355         May-03-21 Monday EDT 16:45:08      
+[INFO]    - {org.menu.Main}    Enter the account number that you want to see the balance of:          May-03-21 Monday EDT 16:45:08      
+[INFO]    - {org.menu.Main}    Thank You for using the app         May-03-21 Monday EDT 16:45:17      

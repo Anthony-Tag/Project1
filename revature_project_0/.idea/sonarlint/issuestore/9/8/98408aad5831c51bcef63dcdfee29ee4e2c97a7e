@@ -1,0 +1,8 @@
+
+D
+java:S1121".Extract the assignment out of this expression.(«ÑÀÙ
+t
+java:S1450
+"YRemove the "connection" field and declare it as a local variable in the relevant methods.(’çù†ûÿÿÿÿ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ

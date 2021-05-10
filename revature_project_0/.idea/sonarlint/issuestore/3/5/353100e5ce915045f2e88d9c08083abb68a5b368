@@ -1,0 +1,29 @@
+
+f
+java:S1192K"PDefine a constant instead of duplicating this literal "Incorrect input" 4 times.(êŸş
+f	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÃàĞ
+f	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ£Úó
+k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í®¬®ıÿÿÿÿ
+k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í®¬®ıÿÿÿÿ
+f	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‘µ‚
+f	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‘µ‚
+k	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ñêàşÿÿÿÿ
+k	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ñêàşÿÿÿÿ
+k	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ß¦Èÿÿÿÿÿ
+k	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ß¦Èÿÿÿÿÿ
+œ
+java:S1186t"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ß¦Èÿÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(¼¬‡Ÿûÿÿÿÿ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(êŸş
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(½´îş
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(êŸş
+V
+java:S1854b";Remove this useless assignment to local variable "account".(ÃñÙæùÿÿÿÿ
+N	java:S106d"9Replace this use of System.out or System.err by a logger.(êŸş
+4
+java:S2178l"Correct this "|" to "||".(çÍìÎùÿÿÿÿ
+4
+java:S2178l"Correct this "|" to "||".(çÍìÎùÿÿÿÿ
+U	java:S106m"9Replace this use of System.out or System.err by a logger.(êŸş8ˆöæÄ‘/
+G
+java:S1481b",Remove this unused "account" local variable.(ÃñÙæùÿÿÿÿ

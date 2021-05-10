@@ -1,0 +1,153 @@
+
+k
+java:S2095è"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+k
+java:S2095ì"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+r
+java:S2095Ä"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8©¨úÅ‘/
+e
+java:S20955"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(­µøÚ
+k
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+m
+java:S2095ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´8³§ÿÅ‘/
+k
+java:S2095¤"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+k
+java:S2095¨"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+k
+java:S2095Å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+j
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+f
+java:S2095Ğ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+k
+java:S2095†"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+r
+java:S2095»"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8¦÷Å‘/
+k
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+f
+java:S2095¢"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+f
+java:S2095“"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+k
+java:S2095„"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+k
+java:S2095ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+k
+java:S2095‹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ
+m
+java:S2095ß"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´8ƒºõÅ‘/
+m
+java:S2095É"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´8˜õçÅ‘/
+f
+java:S2095ü"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+q
+java:S2095N"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8¾ äÅ‘/
+r
+java:S2095à"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8Ÿ¤æÅ‘/
+f
+java:S2095™"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÉøÙ´
+k
+java:S2095«"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Åæ¨Ñúÿÿÿÿ
+k
+java:S1192T"PDefine a constant instead of duplicating this literal "account_number" 10 times.(ò¢¯©şÿÿÿÿ
+c
+java:S1192U"HDefine a constant instead of duplicating this literal "balance" 9 times.( ³Ò¿şÿÿÿÿ
+q
+java:S1192­"ZDefine a constant instead of duplicating this literal "Transaction has been made" 6 times.(¢”ÿå
+r
+java:S1192—"ODefine a constant instead of duplicating this literal "SET balance=?
+" 6 times.(òøÚúÿÿÿÿ8 ¤æÅ‘/
+
+java:S1192¢"cDefine a constant instead of duplicating this literal "(amount, user_id, account_number)
+" 6 times.(Ş„€¡øÿÿÿÿ
+}
+java:S1192¡"fDefine a constant instead of duplicating this literal "INSERT INTO bank_app.\"transaction\"
+" 6 times.(¡½—Î
+p
+java:S1192"ZDefine a constant instead of duplicating this literal "UPDATE bank_app.accounts
+" 7 times.(Ê„Î4
+g
+java:S11924"QDefine a constant instead of duplicating this literal "VALUES(?, ?, ?);" 7 times.(Òˆ—¼
+o
+java:S1192ƒ"XDefine a constant instead of duplicating this literal "WHERE account_number=?;" 8 times.(ü›´
+_
+java:S1192V"IDefine a constant instead of duplicating this literal "user_id" 10 times.(¼Ö¨¾
+±
+java:S1192ñ"™Define a constant instead of duplicating this literal "SELECT account_number, balance, user_id FROM bank_app.accounts where account_number = ?;" 7 times.(ıè˜°
+U
+java:S1155³">Use isEmpty() to check whether the collection is empty or not.(–Œ‘§
+Z
+java:S1155Î">Use isEmpty() to check whether the collection is empty or not.(à‚Ìùÿÿÿÿ
+g	java:S117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÃàĞ
+g	java:S117î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ£Úó
+l	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í®¬®ıÿÿÿÿ
+l	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í®¬®ıÿÿÿÿ
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‘µ‚
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‘µ‚
+l	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ñêàşÿÿÿÿ
+l	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ñêàşÿÿÿÿ
+l	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ß¦Èÿÿÿÿÿ
+l	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ß¦Èÿÿÿÿÿ
+a
+java:S2259•"EA "NullPointerException" could be thrown; "account" is nullable here.(‘Ì÷´ùÿÿÿÿ
+b
+java:S2259Å"EA "NullPointerException" could be thrown; "account" is nullable here.(À…Ê[8Ä äÅ‘/
+d
+java:S2259ô"FA "NullPointerException" could be thrown; "account1" is nullable here.(œšñŸ8ÄÕÿÅ‘/
+d
+java:S2259Û"FA "NullPointerException" could be thrown; "account2" is nullable here.(òÂ¤ë8®¨úÅ‘/
+i
+java:S2259"FA "NullPointerException" could be thrown; "account2" is nullable here.(‘¼Ø‰ıÿÿÿÿ8ˆºõÅ‘/
+d
+java:S2259ø"FA "NullPointerException" could be thrown; "account1" is nullable here.(îÆ¢é8ŒîæÅ‘/
+_
+java:S2583Y"DChange this condition so that it does not always evaluate to "false"(ê¶Óêùÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(àŒªÒ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(µ‹²
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(¨Ù£…
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(³¯…·
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(öÇöùÿÿÿÿ
+N	java:S106a"9Replace this use of System.out or System.err by a logger.(½Ä¨¬
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(éÆ«ïÿÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(Ò½Õ›ùÿÿÿÿ
+N	java:S106g"9Replace this use of System.out or System.err by a logger.(†ˆà
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(“»Ë¸
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(µ–¿¸
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(ÔÖî¾úÿÿÿÿ
+T	java:S106Œ"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106š"9Replace this use of System.out or System.err by a logger.(—“®Øıÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(Õ–ÄÅüÿÿÿÿ
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106Ï"9Replace this use of System.out or System.err by a logger.(¢òÄƒüÿÿÿÿ
+T	java:S106Ó"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+:
+java:S2119Û"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+O	java:S106æ"9Replace this use of System.out or System.err by a logger.(…ÒÔœ
+T	java:S106è"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106ı"9Replace this use of System.out or System.err by a logger.(Š¿€¯şÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(ÔÖî¾úÿÿÿÿ
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+T	java:S106²"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+O	java:S106Ü"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+?	java:S108à")Either remove or fill this block of code.(‹Ò‡Ç
+O	java:S106"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+O	java:S106´"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+O	java:S106ñ"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+O	java:S106Š"9Replace this use of System.out or System.err by a logger.(¢”ÿå
+=
+java:S1481‡"&Remove this unused "c" local variable.(á‡áÿ
+=
+java:S1481˜"&Remove this unused "c" local variable.(á‡áÿ
+E
+java:S1481å".Remove this unused "resultSet" local variable.(ò¡¥¹
+H
+java:S1481Ú",Remove this unused "account" local variable.(ç¦·åøÿÿÿÿ

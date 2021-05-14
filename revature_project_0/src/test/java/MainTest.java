@@ -18,13 +18,13 @@ public class MainTest {
         String password="pass";
         String type = "customer";
         String nullvar="";
-        User user = validation.createUser(username,password,type);
+        User user = validation.getUser(username,password);
         Assertions.assertNotNull(user);
-        user=validation.createUser(username,nullvar, type);
+        user=validation.getUser(username,nullvar);
         Assertions.assertNull(user);
-        user=validation.createUser(nullvar,password, type);
+        user=validation.getUser(nullvar,password);
         Assertions.assertNull(user);
-        user=validation.createUser(nullvar,nullvar, type);
+        user=validation.getUser(nullvar,nullvar);
         Assertions.assertNull(user);
     }
 }

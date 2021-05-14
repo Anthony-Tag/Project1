@@ -59,6 +59,7 @@ function load() {
 }
 function reset() {
     document.getElementById("put").innerHTML = "";
+    document.getElementById("put2").innerHTML = "";
 }
 function logout(){
     window.location = "index.html";

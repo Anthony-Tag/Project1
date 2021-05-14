@@ -169,3 +169,26 @@
 [INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:54:57      
 [INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:57:35      
 [INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:57:35      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 13:54:52      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 13:54:53      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 13:54:54      
+[WARN]    - {org.menu.Main}    User account created         May-14-21 Friday EDT 14:16:52      
+[WARN]    - {org.menu.Main}    User account created         May-14-21 Friday EDT 14:19:39      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 14:47:07      
+[WARN]    - {org.menu.Main}    User account created         May-14-21 Friday EDT 15:19:32      
+[WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-14-21 Friday EDT 15:19:43      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No results were returned by the query.         May-14-21 Friday EDT 15:20:27      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 15:21:29      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 15:21:41      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 15:21:43      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 15:21:56      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 15:22:10      
+[WARN]    - {org.menu.Main}    Not enough money in account         May-14-21 Friday EDT 15:22:29      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 15:23:26      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}, Account{id=1, user_id=8, account_number=79, balance=5.0}]         May-14-21 Friday EDT 15:23:26      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 15:24:47      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 15:26:57      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}, Account{id=1, user_id=8, account_number=79, balance=5.0}]         May-14-21 Friday EDT 15:26:57      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 15:28:31      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 15:28:31      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 15:28:32      

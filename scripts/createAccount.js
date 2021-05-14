@@ -22,12 +22,8 @@ function submitForm(){
         .then(res => res.json())
         .then(res1 => {
             console.log(res1)
-            if (res1.good == 0){
-                document.getElementById("error").innerHTML = "<p>username or password is incorrect</p>";
-            }else {
                 console.log("enter");
                 document.getElementById("form").submit();
-            }
          });
         }
     }

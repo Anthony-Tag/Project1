@@ -236,7 +236,6 @@ public class UserDAOImpl implements UserDAO {
                     "where transaction_number = ? order by account_number;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1,trans);
-
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 Transaction transaction = new Transaction();

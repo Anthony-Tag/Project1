@@ -2,7 +2,9 @@ let user
 let accounts
 
 function load() {
-    let url = "http://localhost:9000/login/" + "jpeters" + "/" + "Password1";
+    let username = document.getElementById("username").value
+    let password = document.getElementById("password").value
+    let url = "http://localhost:9000/login/" + username + "/" + password;
     fetch(url)
         .then(res => res.json())
         .then(res1 => {
@@ -33,8 +35,24 @@ function load() {
             "<br>"+
             "<input type=\"button\" onclick=\"postMenu()\" value=\"Post Menu\">"+
             "<input type=\"button\" onclick=\"acceptMenu()\" value=\"Accept Menu\"></input>"
-            } else {
-
+            document.getElementById("con").innerHTML = "";    
+        } else if(user.type == "employee"){
+                document.getElementById("type").innerHTML = 
+                "<input type=\"button\" onclick=\"arAccount()\" value=\"get Accept/Reject accounts\">"+
+                "<br><label>Get transaction by user</label>"+
+                "<input type=\"text\" id=\"transUser\">"+
+                "<input type=\"button\" onclick=\"getTransactionUser()\" value=\"Get Transactions\">"+
+                "<br>"+
+                "<label>Get transaction by transaction number</label>"+
+                "<input type=\"text\" id=\"transNumb\">"+
+                "<input type=\"button\" onclick=\"getTransactionNumb()\" value=\"Get Transactions\">"+
+                "<br>"+
+                "<label>Get transaction by account Id</label>"+
+                "<input type=\"text\" id=\"transId\">"+
+                "<input type=\"button\" onclick=\"getTransactionId()\" value=\"Get Transactions\">";
+                document.getElementById("con").innerHTML = "";
+            }else {
+                   
             }
         });
 
@@ -42,7 +60,9 @@ function load() {
 function reset() {
     document.getElementById("put").innerHTML = "";
 }
-
+function logout(){
+    window.location = "index.html";
+}
 function getAccountByUserId() {
     let id = document.getElementById("account_id").value
     console.log(id)
@@ -54,6 +74,7 @@ function getAccountByUserId() {
             let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Account number</th><th>Balance</th></tr></thead>";
             data = data + "<tr><td>" + res1.account_number + "</td><td>" + res1.balance + "</td><tr></table>";
             document.getElementById("put").innerHTML = data;
+            getTransactionid(id);
         });
 }
 
@@ -101,7 +122,7 @@ function withdrawl(){
     fetch(url)
         .then(res => {
             console.log(res)
-            document.getElementById("put").innerHTML = res;
+            getTransactionid(account);
         })
             
     }
@@ -118,7 +139,7 @@ function deposit(){
     fetch(url)
         .then(res => {
             console.log(res)
-            document.getElementById("put").innerHTML = res;
+            getTransactionid(account);
         })
             
     }
@@ -146,6 +167,7 @@ function post(){
     fetch(url)
         .then(res => {
             console.log(res)
+            getTransactionid(account1);
         })
             
     }
@@ -172,6 +194,7 @@ function acceptM(){
     fetch(url)
         .then(res => {
             console.log(res)
+
         })
             
     }
@@ -199,15 +222,15 @@ function arAccount(){
             console.log(res1)
             accounts = res1;
             res1.forEach(element => {
-                data = data +"<p>account number: " + element.account_number + " user_id: "+ element.user_id+" balance: "+element.balance+"</p>"+
+                data = data +"<p>account number: <span id =\"numb\">" + element.account_number + "</p> user_id: "+ element.user_id+" balance: "+element.balance+"</p>"+
                 "<input type=\"button\" onclick=\"accept()\" value=\"Accept\">"+
-                "<input type=\"button\" onclick=\"reject()\" value=\"Reject\"></input>";
+                "<input type=\"button\" onclick=\"reject()\" value=\"Reject\">";
             });
             document.getElementById("put").innerHTML = data;
         });
 }
 function accept() {
-    let id = document.getElementById("accept").value
+    let id = document.getElementById("numb").value
     let url = "http://localhost:9000/accept/" + id;
     fetch(url)
         .then(res => res.json())
@@ -219,7 +242,8 @@ function accept() {
 }
 
 function reject() {
-    let id = document.getElementById("reject").value
+    let id = document.getElementById("numb").value
+    console.log(id)
     let url = "http://localhost:9000/reject/" + id;
     fetch(url)
         .then(res => res.json())
@@ -228,4 +252,70 @@ function reject() {
 
         });
 
+}
+
+function getTransactionid(id){
+    let url = "http://localhost:9000/transactions/account/" + id;
+    fetch(url)
+        .then(res => res.json())
+        .then(res1 => {
+            console.log(res1)
+            let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Account number</th><th>User Id</th><th>Amounts</th></tr></thead>";
+            res1.forEach(element => {    
+            data = data + "<tr><td>" + element.account_number + "</td><td>" + element.user + "</td><td>"+element.amount+"</td></tr>";
+            
+            });
+        data = data+"</table>";
+        document.getElementById("put2").innerHTML = data;
+        });
+}
+
+function getTransactionId(){
+    let id = document.getElementById("transId").value;
+    let url = "http://localhost:9000/transactions/account/" + id;
+    fetch(url)
+        .then(res => res.json())
+        .then(res1 => {
+            console.log(res1)
+            let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Account number</th><th>User Id</th><th>Amounts</th></tr></thead>";
+            res1.forEach(element => {    
+            data = data + "<tr><td>" + element.account_number + "</td><td>" + element.user + "</td><td>"+element.amount+"</td></tr>";
+            
+            });
+        data = data+"</table>";
+        document.getElementById("put2").innerHTML = data;
+        });
+}
+function getTransactionUser(){
+    let id = document.getElementById("transUser").value
+    let url = "http://localhost:9000/transactions/id/" + id;
+    fetch(url)
+        .then(res => res.json())
+        .then(res1 => {
+            console.log(res1)
+            let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Account number</th><th>User Id</th><th>Amounts</th></tr></thead>";
+            res1.forEach(element => {    
+            data = data + "<tr><td>" + element.account_number + "</td><td>" + element.user + "</td><td>"+element.amount+"</td></tr>";
+            
+            });
+        data = data+"</table>";
+        document.getElementById("put2").innerHTML = data;
+        });
+}
+
+function getTransactionNumb(){
+    let id = document.getElementById("transNumb").value
+    let url = "http://localhost:9000/transactions/trans/" + id;
+    fetch(url)
+        .then(res => res.json())
+        .then(res1 => {
+            console.log(res1)
+            let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Account number</th><th>User Id</th><th>Amounts</th></tr></thead>";
+            res1.forEach(element => {    
+            data = data + "<tr><td>" + element.account_number + "</td><td>" + element.user + "</td><td>"+element.amount+"</td></tr>";
+            
+            });
+        data = data+"</table>";
+        document.getElementById("put2").innerHTML = data;
+        });
 }

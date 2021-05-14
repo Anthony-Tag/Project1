@@ -136,3 +136,36 @@
 [INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:12:25      
 [INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:13:08      
 [INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:13:08      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:35:38      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:36:34      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:39:09      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:39:42      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:40:58      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:41:40      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 11:51:03      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 11:51:03      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:15:43      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:17:21      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:20:08      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:21:18      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:24:39      
+[WARN]    - {org.menu.Main}    No transactions exist in DataBase         May-14-21 Friday EDT 12:25:05      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 12:38:34      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:41:25      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:41:25      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:44:48      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:44:48      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:47:58      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:47:58      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:49:28      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:49:28      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:51:07      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:51:07      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:51:50      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:51:50      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:53:09      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:53:09      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:54:57      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:54:57      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 12:57:35      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 12:57:35      

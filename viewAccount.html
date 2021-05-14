@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Account</title>
 </head>
-<body onload="load()">
+<body)">
     <h1 id = "welcome">Welcome</h1>
+    <div id="con">
+        <label>confirm username and password</label>
+        <input type="text" id="username">
+        <input type="text" id="password">
+        <input type="button" onclick="load()" id="confirm" value="Confirm">
+    </div>
         <div id = "account_numbers"></div>
             <input type="button" onclick="reset()" id="reset" value="Reset bottom">
+            <input type="button" onclick="logout()" id="logout" value="Logout">
             <br>
             <div id="type">
-                <input type="button" onclick="arAccount()" value="get Accept/Reject accounts">
-                
             </div>
         <div id="put"></div>
+        <div id="put2"></div>
     <script>
         //console.log(document.getElementById("form"));
     </script>

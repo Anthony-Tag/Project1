@@ -90,7 +90,7 @@ public class BankAppSearchImpl implements BankAppSearch {
     @Override
     public List<Transaction> getTransactionsTrans(int trans) throws BankException {
         List<Transaction> transactionList=null;
-        transactionList = userDAO.getTransactionsAcc(trans);
+        transactionList = userDAO.getTransactionsTrans(trans);
         return transactionList;
     }
 

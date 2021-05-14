@@ -94,11 +94,20 @@ public class Main {
             ctx.result("finished");
         });
 
-        app.get("/transation/id/:id",ctx -> {
+        app.get("/transactions/id/:id",ctx -> {
            List<Transaction> transactionList= bankAppSearch.getTransactionsId(Integer.parseInt(ctx.pathParam("id")));
            ctx.json(transactionList);
         });
 
+        app.get("/transactions/account/:account",ctx -> {
+            List<Transaction> transactionList= bankAppSearch.getTransactionsAcc(Integer.parseInt(ctx.pathParam("account")));
+            ctx.json(transactionList);
+        });
+        app.get("/transactions/trans/:trans",ctx -> {
+            System.out.println(Integer.parseInt(ctx.pathParam("trans")));
+            List<Transaction> transactionList= bankAppSearch.getTransactionsTrans(Integer.parseInt(ctx.pathParam("trans")));
+            ctx.json(transactionList);
+        });
 
 //                        log.info("3) View a log of transactions from all account");
 //                        log.info("4) Exit back");

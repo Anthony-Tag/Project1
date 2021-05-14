@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-05-11T03:18:11" hostname="OWNER" time="0.744">
+<testsuite name="MainTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-05-14T14:05:47" hostname="OWNER" time="2.293">
   <properties/>
-  <testcase name="testCreateUser()" classname="MainTest" time="0.744">
+  <testcase name="testCreateUser()" classname="MainTest" time="2.293">
     <failure message="org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:109)
@@ -9,7 +9,7 @@
 	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:36)
 	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:31)
 	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:283)
-	at MainTest.testCreateUser(MainTest.java:21)
+	at MainTest.testCreateUser(MainTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

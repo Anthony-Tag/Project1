@@ -56,7 +56,7 @@ public class UserDAOImpl implements UserDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
-            preparedStatement.setString(3, "customer");
+            preparedStatement.setString(3, type);
 
             int c = preparedStatement.executeUpdate();
             if (c == 1) {
@@ -87,6 +87,7 @@ public class UserDAOImpl implements UserDAO {
                 accounts.setAccount_number(resultSet.getInt("account_number"));
                 accounts.setBalance(resultSet.getDouble("balance"));
                 accounts.setUser_id(resultSet.getInt("user_id"));
+                accounts.setId(resultSet.getInt("id"));
                 accountList.add(accounts);
             }
             if (accountList == null) {
@@ -144,9 +145,10 @@ public class UserDAOImpl implements UserDAO {
         List<Account> accountList = new ArrayList<>();
         try (Connection connection = PostgresSqlConnection.getConnection()) {
             String sql = "SELECT account_number, balance, user_id, id\n" +
-                    "FROM bank_app.accounts where user_id = ?;";
+                    "FROM bank_app.accounts where user_id = ? and id != ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
+            preparedStatement.setInt(2,1);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -168,7 +170,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public List<Transaction> getTransactions(int id) throws BankException {
+    public List<Transaction> getTransactionsId(int id) throws BankException {
         List<Transaction> transactionList = new ArrayList<>();
         try (Connection connection = PostgresSqlConnection.getConnection()) {
             String sql = "SELECT amount, user_id, account_number, transaction_number\n" +
@@ -183,6 +185,65 @@ public class UserDAOImpl implements UserDAO {
                 transaction.setAccount_number(resultSet.getInt("account_number"));
                 transaction.setAmount(resultSet.getDouble("amount"));
                 transaction.setUser(resultSet.getInt("user_id"));
+                transaction.setTransaction_number(resultSet.getInt("transaction_number"));
+                transactionList.add(transaction);
+            }
+            if (transactionList.size() == 0) {
+                log.warn("No transactions exist in DataBase");
+            }
+
+        } catch (SQLException | ClassNotFoundException e) {
+            log.error(e);
+        }
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> getTransactionsAcc(int account_id) throws BankException {
+        List<Transaction> transactionList = new ArrayList<>();
+        try (Connection connection = PostgresSqlConnection.getConnection()) {
+            String sql = "SELECT amount, user_id, account_number, transaction_number\n" +
+                    "FROM bank_app.\"transaction\" \n" +
+                    "where account_number = ? order by account_number;";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,account_id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Transaction transaction = new Transaction();
+                transaction.setAccount_number(resultSet.getInt("account_number"));
+                transaction.setAmount(resultSet.getDouble("amount"));
+                transaction.setUser(resultSet.getInt("user_id"));
+                transaction.setTransaction_number(resultSet.getInt("transaction_number"));
+                transactionList.add(transaction);
+            }
+            if (transactionList.size() == 0) {
+                log.warn("No transactions exist in DataBase");
+            }
+
+        } catch (SQLException | ClassNotFoundException e) {
+            log.error(e);
+        }
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> getTransactionsTrans(int trans) throws BankException {
+        List<Transaction> transactionList = new ArrayList<>();
+        try (Connection connection = PostgresSqlConnection.getConnection()) {
+            String sql = "SELECT amount, user_id, account_number, transaction_number\n" +
+                    "FROM bank_app.\"transaction\" \n" +
+                    "where transaction_number = ? order by account_number;";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,trans);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Transaction transaction = new Transaction();
+                transaction.setAccount_number(resultSet.getInt("account_number"));
+                transaction.setAmount(resultSet.getDouble("amount"));
+                transaction.setUser(resultSet.getInt("user_id"));
+                transaction.setTransaction_number(resultSet.getInt("transaction_number"));
                 transactionList.add(transaction);
             }
             if (transactionList.size() == 0) {

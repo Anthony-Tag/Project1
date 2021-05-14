@@ -8,3 +8,7 @@ p.error{
 input {
     margin: 5px;
 }
+body {
+    margin: 5px;
+    padding-left: 10px;
+}

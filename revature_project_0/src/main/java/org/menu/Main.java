@@ -34,14 +34,13 @@ public class Main {
 
         app.post("/createUser",ctx -> {//Create user in DB
             User user=ctx.bodyAsClass(User.class);
-            //user=bankAppSearch.createUser(user.getUsername(),user.getPassword(), user.getType());
+            user=bankAppSearch.createUser(user.getUsername(),user.getPassword(), user.getType());
             if(user == null){
                 Empty empty=new Empty(0);
                 ctx.json(empty);
             }else {
                 ctx.json(user);
             }
-
         });
         app.get("/account/:account_id",ctx -> {//Get one user account
             Account account=bankAppSearch.getAccount(Integer.parseInt(ctx.pathParam("account_id")));
@@ -51,6 +50,37 @@ public class Main {
             List<Account> accounts=bankAppSearch.getCustomerAccount(Integer.parseInt(ctx.pathParam("id")));
             ctx.json(accounts);
         });
+        app.post("/createAccount",ctx -> {//Create user in DB
+            Account account=ctx.bodyAsClass(Account.class);
+            bankAppSearch.createAccount(account.getBalance(),account.getUser_id());
+            if(account == null){
+                Empty empty=new Empty(0);
+                ctx.json(empty);
+            }else {
+                ctx.json(account);
+            }
+        });
+
+        app.get("/withdrawal/:amount/:account/:id",ctx -> {//Get one user accounts
+            bankAppSearch.withdrawalFromAccount(Double.parseDouble(ctx.pathParam("amount")),Integer.parseInt(ctx.pathParam("account")),Integer.parseInt(ctx.pathParam("id")));
+            ctx.result("done");
+        });
+
+        app.get("/deposit/:amount/:account/:id",ctx -> {//Get one user accounts
+            bankAppSearch.depositToAccount(Double.parseDouble(ctx.pathParam("amount")),Integer.parseInt(ctx.pathParam("account")),Integer.parseInt(ctx.pathParam("id")));
+            ctx.result("done");
+        });
+
+        app.get("/post/:amount/:account1/:account2",ctx -> {//Get one user accounts
+            bankAppSearch.postMoney(Double.parseDouble(ctx.pathParam("amount")),Integer.parseInt(ctx.pathParam("account1")),Integer.parseInt(ctx.pathParam("account2")));
+            ctx.result("done");
+        });
+
+        app.get("/accept/:amount/:account1/:account2",ctx -> {//Get one user accounts
+            bankAppSearch.acceptMoney(Double.parseDouble(ctx.pathParam("amount")),Integer.parseInt(ctx.pathParam("account1")),Integer.parseInt(ctx.pathParam("account2")));
+            ctx.result("done");
+        });
+
         app.get("/accountsARA",ctx -> {//Get one user accounts
             List<Account> accounts=bankAppSearch.getARAccount();
             ctx.json(accounts);
@@ -63,6 +93,13 @@ public class Main {
             bankAppSearch.rejectAccount(Integer.parseInt(ctx.pathParam("account_id")));
             ctx.result("finished");
         });
+
+        app.get("/transation/id/:id",ctx -> {
+           List<Transaction> transactionList= bankAppSearch.getTransactionsId(Integer.parseInt(ctx.pathParam("id")));
+           ctx.json(transactionList);
+        });
+
+
 //                        log.info("3) View a log of transactions from all account");
 //                        log.info("4) Exit back");
 //                        try {
@@ -107,11 +144,7 @@ public class Main {
 //                                break;
 //                            default:
 //                                log.warn("Incorrect response");
-//                        }
-//                    } while (ch != 4);
-//                } else {//customer
-//                    do {
-//                        log.info("Welcome Customer:");
+
 //                        log.info("1) Apply for a new bank account");
 //                        log.info("2) View balance of one account");
 //                        log.info("3) Withdrawal or deposit in an account");

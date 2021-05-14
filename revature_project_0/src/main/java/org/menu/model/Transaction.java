@@ -4,11 +4,13 @@ public class Transaction {
     private int account_number;
     private double amount;
     private int user;
+    private int transaction_number;
 
-    public Transaction(int account_number, double amount, int user) {
+    public Transaction(int account_number, double amount, int user, int transaction_number) {
         this.account_number = account_number;
         this.amount = amount;
         this.user = user;
+        this.transaction_number = transaction_number;
     }
 
     public Transaction() {
@@ -38,11 +40,21 @@ public class Transaction {
         this.user = user;
     }
 
+    public int getTransaction_number() {
+        return transaction_number;
+    }
+
+    public void setTransaction_number(int transaction_number) {
+        this.transaction_number = transaction_number;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +
                 "account_number=" + account_number +
-                ", amount= $" + amount +
+                ", amount=" + amount +
+                ", user=" + user +
+                ", transaction_number=" + transaction_number +
                 '}';
     }
 }

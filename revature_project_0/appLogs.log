@@ -82,3 +82,57 @@
 [WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-13-21 Thursday EDT 23:40:11      
 [INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 00:06:07      
 [INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 00:06:41      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 01:02:41      
+[INFO]    - {org.menu.Main}    [Account{id=0, user_id=8, account_number=79, balance=5.0}, Account{id=0, user_id=2, account_number=12345, balance=156738.5}, Account{id=0, user_id=6, account_number=1355, balance=1038.32996}, Account{id=0, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 01:02:41      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 01:03:48      
+[INFO]    - {org.menu.Main}    [Account{id=0, user_id=8, account_number=79, balance=5.0}, Account{id=0, user_id=2, account_number=12345, balance=156738.5}, Account{id=0, user_id=6, account_number=1355, balance=1038.32996}, Account{id=0, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 01:03:48      
+[WARN]    - {org.menu.Main}    No account with that account number exist in DataBase         May-14-21 Friday EDT 02:24:33      
+[WARN]    - {org.menu.Main}    No account with that account number exist in DataBase         May-14-21 Friday EDT 02:24:38      
+[WARN]    - {org.menu.Main}    No account with that account number exist in DataBase         May-14-21 Friday EDT 02:26:26      
+[WARN]    - {org.menu.Main}    No account with that account number exist in DataBase         May-14-21 Friday EDT 02:28:13      
+[WARN]    - {org.menu.Main}    No account with that account number exist in DataBase         May-14-21 Friday EDT 02:29:10      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No results were returned by the query.         May-14-21 Friday EDT 04:10:33      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No results were returned by the query.         May-14-21 Friday EDT 04:11:50      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 05:15:33      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:15:41      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:47:21      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:48:19      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:49:06      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:50:45      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: No value specified for parameter 2.         May-14-21 Friday EDT 05:50:58      
+[WARN]    - {org.menu.Main}    Not enough money in account         May-14-21 Friday EDT 05:55:10      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 05:58:06      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 05:58:06      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 05:59:48      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 05:59:48      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 06:00:24      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 06:00:24      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 06:00:58      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 06:00:58      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 06:03:20      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 06:03:20      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 06:04:06      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 06:04:06      
+[WARN]    - {org.menu.Main}    User account created         May-14-21 Friday EDT 10:05:49      
+[INFO]    - {org.menu.Main}    Transaction has been made         May-14-21 Friday EDT 10:47:13      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-14-21 Friday EDT 10:57:52      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:05:20      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:05:20      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:06:15      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:06:15      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:06:26      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:06:26      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:07:31      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:07:31      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:07:33      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:07:33      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:08:15      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:08:15      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:10:28      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:10:28      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:10:41      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:10:41      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:12:25      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:12:25      
+[INFO]    - {org.menu.Main}    Accounts found         May-14-21 Friday EDT 11:13:08      
+[INFO]    - {org.menu.Main}    [Account{id=1, user_id=8, account_number=79, balance=5.0}, Account{id=1, user_id=2, account_number=12345, balance=156738.5}, Account{id=1, user_id=8, account_number=370, balance=100.0}, Account{id=1, user_id=6, account_number=1355, balance=1038.32996}, Account{id=1, user_id=0, account_number=11345, balance=10238.4297}]         May-14-21 Friday EDT 11:13:08      

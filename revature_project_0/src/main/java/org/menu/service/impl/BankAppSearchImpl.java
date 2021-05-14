@@ -74,9 +74,23 @@ public class BankAppSearchImpl implements BankAppSearch {
     }
 
     @Override
-    public List<Transaction> getTransactions(int id) throws BankException {
+    public List<Transaction> getTransactionsId(int id) throws BankException {
         List<Transaction> transactionList=null;
-        transactionList = userDAO.getTransactions(id);
+        transactionList = userDAO.getTransactionsId(id);
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> getTransactionsAcc(int account_id) throws BankException {
+        List<Transaction> transactionList=null;
+        transactionList = userDAO.getTransactionsAcc(account_id);
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> getTransactionsTrans(int trans) throws BankException {
+        List<Transaction> transactionList=null;
+        transactionList = userDAO.getTransactionsAcc(trans);
         return transactionList;
     }
 

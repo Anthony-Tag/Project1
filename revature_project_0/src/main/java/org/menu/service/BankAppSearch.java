@@ -14,7 +14,9 @@ public interface BankAppSearch {
     public void approveAccount(int id) throws BankException;
     public void rejectAccount(int id) throws BankException;
     public List<Account> getCustomerAccount(int id) throws BankException;
-    public List<Transaction> getTransactions(int id) throws BankException;
+    public List<Transaction> getTransactionsId(int id) throws BankException;
+    public List<Transaction> getTransactionsAcc(int account_id) throws BankException;
+    public List<Transaction> getTransactionsTrans(int trans) throws BankException;
     public void createAccount(double balance, int user_id) throws BankException;//Customer
     public Account getAccount(int account_number) throws BankException;
     public void withdrawalFromAccount(double amount, int account_number, int user_id) throws BankException;

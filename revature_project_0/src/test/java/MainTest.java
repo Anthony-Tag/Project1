@@ -17,7 +17,7 @@ public class MainTest {
         String username="user";
         String password="pass";
         String type = "customer";
-        String nullvar=null;
+        String nullvar="";
         User user = validation.createUser(username,password,type);
         Assertions.assertNotNull(user);
         user=validation.createUser(username,nullvar, type);

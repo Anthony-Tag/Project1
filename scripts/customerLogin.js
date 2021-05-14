@@ -1,7 +1,6 @@
 function submitForm(){
     let username=document.getElementById("username").value
     let password=document.getElementById("password").value
-    let type=document.getElementById("type").value
     document.getElementById("error").innerHTML = "";
     if (username == "" || password == ""){
         document.getElementById("error").innerHTML = "<p>username or password is incorrect</p>";
@@ -14,6 +13,8 @@ function submitForm(){
         .then(res1 => {
             console.log(res1.good);
             if (res1.good == 0){
+                document.getElementById("error").innerHTML = "<p>username or password is incorrect</p>";
+            }else if(res1.type != "customer"){
                 document.getElementById("error").innerHTML = "<p>username or password is incorrect</p>";
             }else {
                 console.log("enter");

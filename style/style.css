@@ -1,0 +1,10 @@
+div.form{
+    border-style: solid;
+}
+p.error{
+    color: red;
+}
+
+input {
+    margin: 5px;
+}

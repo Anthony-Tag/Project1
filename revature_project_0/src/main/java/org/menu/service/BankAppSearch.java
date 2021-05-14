@@ -9,10 +9,12 @@ import java.util.List;
 
 public interface BankAppSearch {
     public User getUser(String username, String password) throws BankException;
-    public User createUser(String username, String password) throws BankException;
+    public User createUser(String username, String password, String type) throws BankException;
     public List<Account> getARAccount() throws BankException;//Employee
+    public void approveAccount(int id) throws BankException;
+    public void rejectAccount(int id) throws BankException;
     public List<Account> getCustomerAccount(int id) throws BankException;
-    public List<Transaction> getTransactions() throws BankException;
+    public List<Transaction> getTransactions(int id) throws BankException;
     public void createAccount(double balance, int user_id) throws BankException;//Customer
     public Account getAccount(int account_number) throws BankException;
     public void withdrawalFromAccount(double amount, int account_number, int user_id) throws BankException;

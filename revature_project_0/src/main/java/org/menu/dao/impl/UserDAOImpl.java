@@ -1,5 +1,7 @@
 package org.menu.dao.impl;
 
+import org.apache.log4j.Logger;
+import org.menu.Main;
 import org.menu.dao.UserDAO;
 import org.menu.dao.dbutil.PostgresSqlConnection;
 import org.menu.exception.BankException;
@@ -14,11 +16,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class UserDAOImpl implements UserDAO {
-    Scanner scanner = new Scanner(System.in);
-
+    Scanner scanner=new Scanner(System.in);
+    Logger log = Logger.getLogger(Main.class);
     @Override//complete
     public User getUser(String username, String password) throws BankException {
-        User user = null;
+        User user =null;
+
         try (Connection connection = PostgresSqlConnection.getConnection()) {
             String sql = "select u.username, u.\"password\", u.id, u.type from bank_app.\"user\" u where u.username = ? and u.\"password\"= ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -33,18 +36,18 @@ public class UserDAOImpl implements UserDAO {
                 user.setId(resultSet.getInt("id"));
                 user.setType(resultSet.getString("type"));
             } else {
-                throw new BankException("No User found with this username and password");
+                log.warn("No User found with this username and password");
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
-            throw new BankException("Internal error occured in getUser... contact SysAdmin");
+            log.error(e);
+            log.error("Internal error occured in getUser... contact SysAdmin");
         }
         return user;
     }
 
     @Override//complete
-    public User createUser(String username, String password) throws BankException {
+    public User createUser(String username, String password, String type) throws BankException {
         User user = null;
         try (Connection connection = PostgresSqlConnection.getConnection()) {
             String sql = "INSERT INTO bank_app.\"user\"\n" +
@@ -59,11 +62,11 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 ResultSet resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("User account created");
+                    log.warn("User account created");
                 }
             }
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println("Internal error in createUser... contact SysAdmin");
+            log.error("Internal error in createUser... contact SysAdmin");
         }
         return user;
     }
@@ -73,7 +76,7 @@ public class UserDAOImpl implements UserDAO {
         List<Account> accountList = new ArrayList<>();
         int id = 1;
         try (Connection connection = PostgresSqlConnection.getConnection()) {
-            String sql = "SELECT account_number, balance, user_id\n" +
+            String sql = "SELECT account_number, balance, user_id, id\n" +
                     "FROM bank_app.accounts where id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -87,37 +90,14 @@ public class UserDAOImpl implements UserDAO {
                 accountList.add(accounts);
             }
             if (accountList == null) {
-                System.out.println("No accounts found");
+                log.warn("No accounts found");
             } else {
-                System.out.println("Accounts found");
-                System.out.println(accountList);
+                log.info("Accounts found");
+                log.info(accountList);
             }
-            int ch = 0;
-            do {
-                System.out.println("1) Accept");
-                System.out.println("2) Remove");
-                System.out.println("3) Exit");
-                ch = Integer.parseInt(scanner.nextLine());
-                switch (ch) {
-                    case 1:
-                        System.out.println("Enter the account number of the account you want to accept");
-                        id = Integer.parseInt(scanner.nextLine());
-                        approveAccount(id);
-                        break;
-                    case 2:
-                        System.out.println("Enter the account number of the account you want to reject");
-                        id = Integer.parseInt(scanner.nextLine());
-                        rejectAccount(id);
-                        break;
-                    case 3:
-                        break;
-                    default:
-                        System.out.println("Error has occored");
-                }
-            } while (ch != 3);
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
         return accountList;
     }
@@ -134,10 +114,10 @@ public class UserDAOImpl implements UserDAO {
 
             int c = preparedStatement.executeUpdate();
 
-            System.out.println("Account approved");
+            log.info("Account approved");
 
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println(e);
+            log.error(e);
         }
     }
 
@@ -151,10 +131,10 @@ public class UserDAOImpl implements UserDAO {
 
             int c = preparedStatement.executeUpdate();
 
-            System.out.println("rejection approved");
+            log.info("rejection approved");
 
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println(e);
+            log.error(e);
         }
 
     }
@@ -163,7 +143,7 @@ public class UserDAOImpl implements UserDAO {
     public List<Account> getCustomerAccount(int id) throws BankException {
         List<Account> accountList = new ArrayList<>();
         try (Connection connection = PostgresSqlConnection.getConnection()) {
-            String sql = "SELECT account_number, balance, user_id\n" +
+            String sql = "SELECT account_number, balance, user_id, id\n" +
                     "FROM bank_app.accounts where user_id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
@@ -174,26 +154,28 @@ public class UserDAOImpl implements UserDAO {
                 accounts.setAccount_number(resultSet.getInt("account_number"));
                 accounts.setBalance(resultSet.getInt("balance"));
                 accounts.setUser_id(resultSet.getInt("user_id"));
+                accounts.setId(resultSet.getInt("id"));
                 accountList.add(accounts);
             }
             if (accountList.size() == 0) {
-                System.out.println("No accounts exist in DataBase");
+                log.warn("No accounts exist in DataBase");
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
         return accountList;
     }
 
     @Override
-    public List<Transaction> getTransactions() throws BankException {
+    public List<Transaction> getTransactions(int id) throws BankException {
         List<Transaction> transactionList = new ArrayList<>();
         try (Connection connection = PostgresSqlConnection.getConnection()) {
             String sql = "SELECT amount, user_id, account_number, transaction_number\n" +
                     "FROM bank_app.\"transaction\" \n" +
-                    "order by account_number;;";
+                    "where user_id = ? order by account_number;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -204,11 +186,11 @@ public class UserDAOImpl implements UserDAO {
                 transactionList.add(transaction);
             }
             if (transactionList.size() == 0) {
-                System.out.println("No transactions exist in DataBase");
+                log.warn("No transactions exist in DataBase");
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
         return transactionList;
     }
@@ -227,9 +209,9 @@ public class UserDAOImpl implements UserDAO {
             preparedStatement.setInt(3, user_id);
 
             ResultSet resultSet = preparedStatement.executeQuery();
-            System.out.println("Account has been created");
+            log.info("Account has been created");
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
 
     }
@@ -250,11 +232,11 @@ public class UserDAOImpl implements UserDAO {
                 account.setUser_id(resultSet.getInt("user_id"));
             }
             if (account == null) {
-                System.out.println("No account with that account number exist in DataBase");
+                log.warn("No account with that account number exist in DataBase");
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
         return account;
     }
@@ -284,7 +266,7 @@ public class UserDAOImpl implements UserDAO {
 
                 int c = preparedStatement.executeUpdate();
 
-                System.out.println("Account approved");
+                log.info("Account approved");
 
             sql = "INSERT INTO bank_app.\"transaction\"\n" +
                     "(amount, user_id, account_number)\n" +
@@ -298,12 +280,12 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-            System.out.println(e);
+            log.error(e);
         }
     }
 
@@ -345,12 +327,12 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
 
         } catch (SQLException | ClassNotFoundException e) {
-
+            log.error(e);
         }
 
     }
@@ -396,7 +378,7 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
             sql = "SELECT account_number, balance, user_id FROM bank_app.accounts where account_number = ?;";
@@ -433,7 +415,7 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
 
@@ -494,7 +476,7 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
             double balance1 = account1.getBalance() + amount;
@@ -519,7 +501,7 @@ public class UserDAOImpl implements UserDAO {
             if (c == 1) {
                 resultSet = preparedStatement.getGeneratedKeys();
                 if (resultSet.next()) {
-                    System.out.println("Transaction has been made");
+                    log.info("Transaction has been made");
                 }
             }
 

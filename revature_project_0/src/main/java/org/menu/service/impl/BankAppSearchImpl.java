@@ -27,12 +27,12 @@ public class BankAppSearchImpl implements BankAppSearch {
     }
 
     @Override
-    public User createUser(String username, String password) throws BankException {
+    public User createUser(String username, String password, String type) throws BankException {
         User user=null;
         if (username == null || password == null){
             log.warn("Invalid username or password");
         }else {
-            user = userDAO.createUser(username, password);
+            user = userDAO.createUser(username, password, type);
         }
         return user;
     }
@@ -42,6 +42,24 @@ public class BankAppSearchImpl implements BankAppSearch {
         List<Account> accountList=null;
         accountList = userDAO.getARAccount();
         return accountList;
+    }
+
+    @Override
+    public void approveAccount(int id) throws BankException {
+        if (id<0) {
+            log.warn("Invalid id");
+        }else{
+            userDAO.approveAccount(id);
+        }
+    }
+
+    @Override
+    public void rejectAccount(int id) throws BankException {
+        if (id<0) {
+            log.warn("Invalid id");
+        }else{
+            userDAO.rejectAccount(id);
+        }
     }
 
     @Override
@@ -56,9 +74,9 @@ public class BankAppSearchImpl implements BankAppSearch {
     }
 
     @Override
-    public List<Transaction> getTransactions() throws BankException {
+    public List<Transaction> getTransactions(int id) throws BankException {
         List<Transaction> transactionList=null;
-        transactionList = userDAO.getTransactions();
+        transactionList = userDAO.getTransactions(id);
         return transactionList;
     }
 

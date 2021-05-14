@@ -43,3 +43,42 @@
 [INFO]    - {org.menu.Main}    #1355         May-03-21 Monday EDT 16:45:08      
 [INFO]    - {org.menu.Main}    Enter the account number that you want to see the balance of:          May-03-21 Monday EDT 16:45:08      
 [INFO]    - {org.menu.Main}    Thank You for using the app         May-03-21 Monday EDT 16:45:17      
+[INFO]    - {org.menu.Main}    Login screen         May-10-21 Monday EDT 23:11:32      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-10-21 Monday EDT 23:11:32      
+[INFO]    - {org.menu.Main}    Login screen         May-10-21 Monday EDT 23:13:02      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-10-21 Monday EDT 23:13:02      
+[INFO]    - {org.menu.Main}    Please enter Password (case sensitive)         May-10-21 Monday EDT 23:13:10      
+[INFO]    - {org.menu.Main}    User has logged in         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    User{username='user', id=11}         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    Welcome Customer:         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    1) Apply for a new bank account         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    2) View balance of one account         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    3) Withdrawal or deposit in an account         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    4) Post money transfer to an other account         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    5) Accept money transfer from an other account         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    6) Exit         May-10-21 Monday EDT 23:13:12      
+[INFO]    - {org.menu.Main}    Login screen         May-11-21 Tuesday EDT 22:27:13      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-11-21 Tuesday EDT 22:27:13      
+[INFO]    - {org.menu.Main}    Login screen         May-11-21 Tuesday EDT 22:31:50      
+[INFO]    - {org.menu.Main}    Please enter Username or Exit         May-11-21 Tuesday EDT 22:31:50      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:32:09      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:32:24      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:33:17      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:33:23      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:35:44      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-12-21 Wednesday EDT 00:36:30      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-13-21 Thursday EDT 09:39:10      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-13-21 Thursday EDT 09:41:06      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-13-21 Thursday EDT 09:44:02      
+[WARN]    - {org.menu.Main}    No User found with this username and password         May-13-21 Thursday EDT 12:40:49      
+[WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-13-21 Thursday EDT 23:28:44      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: The column name id was not found in this ResultSet.         May-13-21 Thursday EDT 23:30:14      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: The column name id was not found in this ResultSet.         May-13-21 Thursday EDT 23:30:27      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: The column name id was not found in this ResultSet.         May-13-21 Thursday EDT 23:32:03      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: The column name id was not found in this ResultSet.         May-13-21 Thursday EDT 23:33:18      
+[ERROR]    - {org.menu.Main}    org.postgresql.util.PSQLException: The column name id was not found in this ResultSet.         May-13-21 Thursday EDT 23:35:58      
+[WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-13-21 Thursday EDT 23:39:44      
+[WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-13-21 Thursday EDT 23:40:06      
+[WARN]    - {org.menu.Main}    No accounts exist in DataBase         May-13-21 Thursday EDT 23:40:11      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 00:06:07      
+[INFO]    - {org.menu.Main}    Account approved         May-14-21 Friday EDT 00:06:41      
